@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12110e">
+<title>Закон Ома для полной цепи</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body class="theme-electricity" data-theme-color="#12110e">
+<div class="atmosphere" aria-hidden="true"><span class="streak"></span></div>
+
+<header class="top wrap"><a href="../s/electricity.html">Электрика</a><a href="../index.html">Журнал</a></header>
+<main class="wrap">
+  <p class="kicker">2.5 · Постоянный электрический ток</p>
+  <h1>Закон Ома для полной цепи</h1>
+  <p class="tutor">Найди, кто гонит заряд, и что ему мешает. Дальше — аккуратная арифметика, а не заклинание из букв. Ниже — как устроена тема «Закон Ома для полной цепи», где обычно спотыкаются, и два разбора до ответа.</p>
+  <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема условия, без ответа"><figcaption>Показ к теме. Это условие, не шпаргалка.</figcaption></figure>
+  <nav class="exits">
+    <a class="btn" href="../tests/t/card_elec_current_ohm_full.html">Решить на сайте</a>
+    <a class="btn ghost" href="../work/card_elec_current_ohm_full.html">Лист в тетрадь</a>
+  </nav>
+  <article class="sheet" id="theory">
+    <h2>Сначала смысл</h2>
+    <p class="lede">У любого источника тока есть внутреннее сопротивление r. Ток в цепи зависит не только от нагрузки, но и от этого внутреннего сопротивления.</p>
+<p>У реального источника есть внутреннее сопротивление r. Ток во всей замкнутой цепи I = ℰ / (R + r): в знаменателе и нагрузка, и «спрятанные» омы батарейки.</p>
+<p>Часть напряжения падает внутри источника, U_внутр = I·r, и до лампы доходит не вся ЭДС. Чем больше ток, тем заметнее эта потеря. Батарейка греется именно поэтому.</p>
+<p>Если нагрузку убрать и замкнуть клеммы накоротко, R = 0 и ток короткого замыкания I_кз = ℰ/r ограничен только внутренним сопротивлением. Поэтому короткое замыкание опасно: r обычно мало, ток велик.</p>
+<p>Как решать. Выпиши величины с рисунка к примеру «ЭДС 12 В». Условие: ЭДС источника 12 В, внутреннее сопротивление 1 Ом, нагрузка 5 Ом. Какой ток в цепи? Дальше подставляй их в формулу этой темы и сверяй шаги с решением под картинкой — оно закрыто, пока не попробуешь сам. Второй рисунок, «Напряжение на лампе», тот же приём на других данных: В предыдущей цепи найди напряжение на нагрузке 5 Ом. Если оба примера сходятся, тему можно нести на контрольную.</p>
+  </article>
+  <article class="sheet" id="formulas">
+    <h2>Как читать формулу</h2>
+    <p class="formula">I = ℰ / (R + r)</p>
+    <div class="notes"><p>ℰ — ЭДС источника (В), r — внутреннее сопротивление.</p>
+<p>ℰ — ЭДС (В), r — внутреннее сопротивление источника (Ом), R — внешняя нагрузка.</p></div>
+  </article>
+  <article class="sheet" id="analogy">
+    <h2>Чтобы осталось в голове</h2>
+    <div class="voice"><p>Батарейка «садится». При большом токе часть напряжения падает на внутреннем сопротивлении — это причина нагрева батарейки.</p>
+<p>Батарейка «садится» и греется при большом токе: часть напряжения падает на внутреннем сопротивлении.</p></div>
+  </article>
+  <article class="sheet traps" id="traps">
+    <h2>Где обычно спотыкаются</h2>
+    <p>В знаменателе сумма R + r, а не одно только R. ЭДС ℰ — не то же самое, что напряжение на лампе.</p>
+  </article>
+  <section id="razbor">
+    <p class="tutor">Дальше две задачи. Сначала схема. Когда сам набросаешь ход, открой тетрадь — там дано, перевод в СИ, шаги и ответ в рамке.</p>
+    
+<article class="task" id="task-1">
+  <p class="kicker">Разбор 1</p>
+  <h2>ЭДС 12 В</h2>
+  <p class="ask">ЭДС источника 12 В, внутреннее сопротивление 1 Ом, нагрузка 5 Ом. Какой ток в цепи?</p>
+  <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие. Ответа там нет — его ещё надо получить.</figcaption></figure>
+  <button type="button" data-open="nb-1">Я прикинул ход — открыть тетрадь</button>
+  <div class="notebook sheet" id="nb-1" hidden>
+    <p class="voice">Смотри на порядок, не на красивое число: сначала единицы, потом формула, потом ответ.</p>
+    <p><b>Дано.</b> ЭДС источника 12 В, внутреннее сопротивление 1 Ом, нагрузка 5 Ом</p>
+    <p><b>В СИ.</b></p>
+    <ul class="steps"></ul>
+    <p><b>Найти.</b> Какой ток в цепи?</p>
+    <p><b>Решение.</b></p>
+    <ol class="steps"><li>I = ℰ/(R+r) = 12/(5+1) = 2 А.</li></ol>
+    <p class="answer">2 А.</p>
+    <img src="../../data/images/card_elec_current_ohm_full_0_sol.png" alt="Страница тетради с решением">
+  </div>
+</article>
+
+<article class="task" id="task-2">
+  <p class="kicker">Разбор 2</p>
+  <h2>Напряжение на лампе</h2>
+  <p class="ask">В предыдущей цепи найди напряжение на нагрузке 5 Ом.</p>
+  <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_1.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие. Ответа там нет — его ещё надо получить.</figcaption></figure>
+  <button type="button" data-open="nb-2">Я прикинул ход — открыть тетрадь</button>
+  <div class="notebook sheet" id="nb-2" hidden>
+    <p class="voice">Смотри на порядок, не на красивое число: сначала единицы, потом формула, потом ответ.</p>
+    <p><b>Дано.</b> В предыдущей цепи найди напряжение на нагрузке 5 Ом.</p>
+    <p><b>В СИ.</b></p>
+    <ul class="steps"></ul>
+    <p><b>Найти.</b> ответ на вопрос условия</p>
+    <p><b>Решение.</b></p>
+    <ol class="steps"><li>U = I·R = 2·5 = 10 В.</li></ol>
+    <p class="answer">2·1.</p>
+    <img src="../../data/images/card_elec_current_ohm_full_1_sol.png" alt="Страница тетради с решением">
+  </div>
+</article>
+
+  </section>
+  <nav class="exits">
+    <a class="btn" href="../tests/t/card_elec_current_ohm_full.html">Решить на сайте</a>
+    <a class="btn ghost" href="../work/card_elec_current_ohm_full.html">Лист в тетрадь</a>
+  </nav>
+  <nav class="pager"><a href="card_elec_current_circuits.html">← Последовательное и параллельное соединение</a><a href="card_elec_current_power.html">Мощность и работа тока →</a></nav>
+</main>
+<div class="watermark" aria-hidden="true">I = ℰ / (R + r)</div>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="../quiz.js"></script>
+</body>
+</html>

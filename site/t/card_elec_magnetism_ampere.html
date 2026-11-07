@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12110e">
+<title>Сила Ампера</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body class="theme-electricity" data-theme-color="#12110e">
+<div class="atmosphere" aria-hidden="true"><span class="streak"></span></div>
+
+<header class="top wrap"><a href="../s/electricity.html">Электрика</a><a href="../index.html">Журнал</a></header>
+<main class="wrap">
+  <p class="kicker">3.2 · Магнетизм и электромагнитная индукция</p>
+  <h1>Сила Ампера</h1>
+  <p class="tutor">Найди, кто гонит заряд, и что ему мешает. Дальше — аккуратная арифметика, а не заклинание из букв. Ниже — как устроена тема «Сила Ампера», где обычно спотыкаются, и два разбора до ответа.</p>
+  <figure class="show"><img src="../../data/images/card_elec_magnetism_ampere_0.png" alt="Схема условия, без ответа"><figcaption>Показ к теме. Это условие, не шпаргалка.</figcaption></figure>
+  <nav class="exits">
+    <a class="btn" href="../tests/t/card_elec_magnetism_ampere.html">Решить на сайте</a>
+    <a class="btn ghost" href="../work/card_elec_magnetism_ampere.html">Лист в тетрадь</a>
+  </nav>
+  <article class="sheet" id="theory">
+    <h2>Сначала смысл</h2>
+    <p class="lede">Сила, с которой магнитное поле действует на проводник с током. Максимальна, когда ток перпендикулярен полю.</p>
+<p>Сила Ампера — действие магнитного поля на провод с током. F_A = B·I·l·sin α. Угол α между направлением тока и линиями B. Синус максимален при 90°, поэтому сила наибольшая, когда ток перпендикулярен полю, и равна нулю, когда провод лежит вдоль линий.</p>
+<p>Направление силы даёт левая рука: линии входят в ладонь, четыре пальца — по току, отставленный большой палец — сила. Так устроен поворот рамки в электромоторе: силы на противоположных сторонах рамки крутят её.</p>
+<p>B в теслах, l — длина той части провода, которая находится в поле, в метрах.</p>
+<p>Как решать. Выпиши величины с рисунка к примеру «Перпендикулярный провод». Условие: Провод длиной 0,5 м с током 5 А перпендикулярен полю 0,2 Тл. Найди силу Ампера. Дальше подставляй их в формулу этой темы и сверяй шаги с решением под картинкой — оно закрыто, пока не попробуешь сам. Второй рисунок, «Провод вдоль поля», тот же приём на других данных: Тот же провод развернули вдоль линий поля. Чему равна сила Ампера? Если оба примера сходятся, тему можно нести на контрольную.</p>
+  </article>
+  <article class="sheet" id="formulas">
+    <h2>Как читать формулу</h2>
+    <p class="formula">F_A = B · I · l · sin α</p>
+    <div class="notes"><p>B — магнитная индукция (Тл), l — длина проводника (м), α — угол между током и полем.</p>
+<p>B — индукция (Тл), I — ток (А), l — длина провода в поле (м), α — угол между током и полем.</p></div>
+  </article>
+  <article class="sheet" id="analogy">
+    <h2>Чтобы осталось в голове</h2>
+    <div class="voice"><p>Электродвигатель — это и есть сила Ампера, заставляющая ротор вращаться.</p>
+<p>Электродвигатель крутится силой Ампера: поле толкает провода ротора с током.</p></div>
+  </article>
+  <article class="sheet traps" id="traps">
+    <h2>Где обычно спотыкаются</h2>
+    <p>Не теряй sin α. Вдоль поля сила Ампера на прямой провод равна нулю. И не путай левую руку Ампера с буравчиком для направления линий.</p>
+  </article>
+  <section id="razbor">
+    <p class="tutor">Дальше две задачи. Сначала схема. Когда сам набросаешь ход, открой тетрадь — там дано, перевод в СИ, шаги и ответ в рамке.</p>
+    
+<article class="task" id="task-1">
+  <p class="kicker">Разбор 1</p>
+  <h2>Перпендикулярный провод</h2>
+  <p class="ask">Провод длиной 0,5 м с током 5 А перпендикулярен полю 0,2 Тл. Найди силу Ампера.</p>
+  <figure class="show"><img src="../../data/images/card_elec_magnetism_ampere_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие. Ответа там нет — его ещё надо получить.</figcaption></figure>
+  <button type="button" data-open="nb-1">Я прикинул ход — открыть тетрадь</button>
+  <div class="notebook sheet" id="nb-1" hidden>
+    <p class="voice">Смотри на порядок, не на красивое число: сначала единицы, потом формула, потом ответ.</p>
+    <p><b>Дано.</b> Провод длиной 0,5 м с током 5 А перпендикулярен полю 0,2 Тл</p>
+    <p><b>В СИ.</b></p>
+    <ul class="steps"></ul>
+    <p><b>Найти.</b> Найди силу Ампера.</p>
+    <p><b>Решение.</b></p>
+    <ol class="steps"><li>sin 90° = 1.</li></ol>
+    <p class="answer">0,5 Н.</p>
+    <img src="../../data/images/card_elec_magnetism_ampere_0_sol.png" alt="Страница тетради с решением">
+  </div>
+</article>
+
+<article class="task" id="task-2">
+  <p class="kicker">Разбор 2</p>
+  <h2>Провод вдоль поля</h2>
+  <p class="ask">Тот же провод развернули вдоль линий поля. Чему равна сила Ампера?</p>
+  <figure class="show"><img src="../../data/images/card_elec_magnetism_ampere_1.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие. Ответа там нет — его ещё надо получить.</figcaption></figure>
+  <button type="button" data-open="nb-2">Я прикинул ход — открыть тетрадь</button>
+  <div class="notebook sheet" id="nb-2" hidden>
+    <p class="voice">Смотри на порядок, не на красивое число: сначала единицы, потом формула, потом ответ.</p>
+    <p><b>Дано.</b> Тот же провод развернули вдоль линий поля</p>
+    <p><b>В СИ.</b></p>
+    <ul class="steps"></ul>
+    <p><b>Найти.</b> Чему равна сила Ампера?</p>
+    <p><b>Решение.</b></p>
+    <ol class="steps"><li>α = 0, sin α = 0, F_A = 0.</li></ol>
+    <p class="answer">Толкать провод вдоль линий поле так не умеет.</p>
+    <img src="../../data/images/card_elec_magnetism_ampere_1_sol.png" alt="Страница тетради с решением">
+  </div>
+</article>
+
+  </section>
+  <nav class="exits">
+    <a class="btn" href="../tests/t/card_elec_magnetism_ampere.html">Решить на сайте</a>
+    <a class="btn ghost" href="../work/card_elec_magnetism_ampere.html">Лист в тетрадь</a>
+  </nav>
+  <nav class="pager"><a href="card_elec_magnetism_field.html">← Магнитное поле тока</a><a href="card_elec_magnetism_faraday.html">Закон электромагнитной индукции (Фарадея) →</a></nav>
+</main>
+<div class="watermark" aria-hidden="true">F_A = B · I · l · sin α</div>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="../quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12110e">
+<title>Трансформатор</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body class="theme-electricity" data-theme-color="#12110e">
+<div class="atmosphere" aria-hidden="true"><span class="streak"></span></div>
+
+<header class="top wrap"><a href="../s/electricity.html">Электрика</a><a href="../index.html">Журнал</a></header>
+<main class="wrap">
+  <p class="kicker">3.5 · Магнетизм и электромагнитная индукция</p>
+  <h1>Трансформатор</h1>
+  <p class="tutor">Найди, кто гонит заряд, и что ему мешает. Дальше — аккуратная арифметика, а не заклинание из букв. Ниже — как устроена тема «Трансформатор», где обычно спотыкаются, и два разбора до ответа.</p>
+  <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема условия, без ответа"><figcaption>Показ к теме. Это условие, не шпаргалка.</figcaption></figure>
+  <nav class="exits">
+    <a class="btn" href="../tests/t/card_elec_magnetism_transformer.html">Решить на сайте</a>
+    <a class="btn ghost" href="../work/card_elec_magnetism_transformer.html">Лист в тетрадь</a>
+  </nav>
+  <article class="sheet" id="theory">
+    <h2>Сначала смысл</h2>
+    <p class="lede">Устройство для изменения переменного напряжения. Состоит из двух катушек на одном сердечнике. За счет электромагнитной индукции энергия передается из первичной обмотки во вторичную.</p>
+<p>Трансформатор переносит энергию переменного тока из одной обмотки в другую через общее магнитное поле сердечника. Постоянный ток он не трансформирует: поток должен меняться, иначе во вторичной обмотке нет ЭДС индукции.</p>
+<p>Отношение напряжений равно отношению витков: U₁/U₂ = N₁/N₂. В задаче карточки 220 В превращаются в 2200 В, отношение 10, значит вторичная обмотка имеет в 10 раз больше витков.</p>
+<p>Если витков во вторичной меньше, трансформатор понижающий: напряжение падает, зато ток во вторичной цепи может быть больше. Энергия при идеальном трансформаторе не берётся из ниоткуда: выше напряжение — ниже ток.</p>
+<p>Как решать. Выпиши величины с рисунка к примеру «220 В → 2200 В». Условие: Трансформатор повышает напряжение с 220 В до 2200 В. Во сколько раз число витков вторичной обмотки больше, чем первичной? Дальше подставляй их в формулу этой темы и сверяй шаги с решением под картинкой — оно закрыто, пока не попробуешь сам. Второй рисунок, «Понижающий в 2 раза», тот же приём на других данных: У первичной обмотки вдвое больше витков, чем у вторичной. На первичную подали 220 В переменного напряжения. Что на вторичной? Если оба примера сходятся, тему можно нести на контрольную.</p>
+  </article>
+  <article class="sheet" id="formulas">
+    <h2>Как читать формулу</h2>
+    <p class="formula">U₁ / U₂ = N₁ / N₂</p>
+    <div class="notes"><p>N₁, N₂ — число витков.</p>
+<p>N₁ и N₂ — числа витков. U₁/U₂ = N₁/N₂.</p></div>
+  </article>
+  <article class="sheet" id="analogy">
+    <h2>Чтобы осталось в голове</h2>
+    <div class="voice"><p>Шестеренки. Маленькая шестеренка крутит большую — увеличивает момент силы (аналог напряжения).</p>
+<p>Шестерёнки: маленькая крутит большую и меняет «момент». У обмоток так меняется напряжение пропорционально виткам.</p></div>
+  </article>
+  <article class="sheet traps" id="traps">
+    <h2>Где обычно спотыкаются</h2>
+    <p>Трансформатор не повышает постоянное напряжение батареи. Нужен переменный поток. И U₂/U₁ — это N₂/N₁, не наоборот.</p>
+  </article>
+  <section id="razbor">
+    <p class="tutor">Дальше две задачи. Сначала схема. Когда сам набросаешь ход, открой тетрадь — там дано, перевод в СИ, шаги и ответ в рамке.</p>
+    
+<article class="task" id="task-1">
+  <p class="kicker">Разбор 1</p>
+  <h2>220 В → 2200 В</h2>
+  <p class="ask">Трансформатор повышает напряжение с 220 В до 2200 В. Во сколько раз число витков вторичной обмотки больше, чем первичной?</p>
+  <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие. Ответа там нет — его ещё надо получить.</figcaption></figure>
+  <button type="button" data-open="nb-1">Я прикинул ход — открыть тетрадь</button>
+  <div class="notebook sheet" id="nb-1" hidden>
+    <p class="voice">Смотри на порядок, не на красивое число: сначала единицы, потом формула, потом ответ.</p>
+    <p><b>Дано.</b> Трансформатор повышает напряжение с 220 В до 2200 В</p>
+    <p><b>В СИ.</b></p>
+    <ul class="steps"></ul>
+    <p><b>Найти.</b> Во сколько раз число витков вторичной обмотки больше, чем первичной?</p>
+    <p><b>Решение.</b></p>
+    <ol class="steps"><li>U₂/U₁ = 2200/220 = 10.</li></ol>
+    <p class="answer">10·N₁.</p>
+    <img src="../../data/images/card_elec_magnetism_transformer_0_sol.png" alt="Страница тетради с решением">
+  </div>
+</article>
+
+<article class="task" id="task-2">
+  <p class="kicker">Разбор 2</p>
+  <h2>Понижающий в 2 раза</h2>
+  <p class="ask">У первичной обмотки вдвое больше витков, чем у вторичной. На первичную подали 220 В переменного напряжения. Что на вторичной?</p>
+  <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_1.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие. Ответа там нет — его ещё надо получить.</figcaption></figure>
+  <button type="button" data-open="nb-2">Я прикинул ход — открыть тетрадь</button>
+  <div class="notebook sheet" id="nb-2" hidden>
+    <p class="voice">Смотри на порядок, не на красивое число: сначала единицы, потом формула, потом ответ.</p>
+    <p><b>Дано.</b> У первичной обмотки вдвое больше витков, чем у вторичной. На первичную подали 220 В переменного напряжения</p>
+    <p><b>В СИ.</b></p>
+    <ul class="steps"></ul>
+    <p><b>Найти.</b> Что на вторичной?</p>
+    <p><b>Решение.</b></p>
+    <ol class="steps"><li>N₂/N₁ = 1/2, поэтому U₂ = 110 В.</li></ol>
+    <p class="answer">Это понижающий трансформатор.</p>
+    <img src="../../data/images/card_elec_magnetism_transformer_1_sol.png" alt="Страница тетради с решением">
+  </div>
+</article>
+
+  </section>
+  <nav class="exits">
+    <a class="btn" href="../tests/t/card_elec_magnetism_transformer.html">Решить на сайте</a>
+    <a class="btn ghost" href="../work/card_elec_magnetism_transformer.html">Лист в тетрадь</a>
+  </nav>
+  <nav class="pager"><a href="card_elec_magnetism_selfinductance.html">← Самоиндукция и индуктивность</a></nav>
+</main>
+<div class="watermark" aria-hidden="true">U₁ / U₂ = N₁ / N₂</div>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="../quiz.js"></script>
+</body>
+</html>

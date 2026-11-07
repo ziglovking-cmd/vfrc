@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12110e">
+<title>Мощность и работа тока</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body class="theme-electricity" data-theme-color="#12110e">
+<div class="atmosphere" aria-hidden="true"><span class="streak"></span></div>
+
+<header class="top wrap"><a href="../s/electricity.html">Электрика</a><a href="../index.html">Журнал</a></header>
+<main class="wrap">
+  <p class="kicker">2.6 · Постоянный электрический ток</p>
+  <h1>Мощность и работа тока</h1>
+  <p class="tutor">Найди, кто гонит заряд, и что ему мешает. Дальше — аккуратная арифметика, а не заклинание из букв. Ниже — как устроена тема «Мощность и работа тока», где обычно спотыкаются, и два разбора до ответа.</p>
+  <figure class="show"><img src="../../data/images/card_elec_current_power_0.png" alt="Схема условия, без ответа"><figcaption>Показ к теме. Это условие, не шпаргалка.</figcaption></figure>
+  <nav class="exits">
+    <a class="btn" href="../tests/t/card_elec_current_power.html">Решить на сайте</a>
+    <a class="btn ghost" href="../work/card_elec_current_power.html">Лист в тетрадь</a>
+  </nav>
+  <article class="sheet" id="theory">
+    <h2>Сначала смысл</h2>
+    <p class="lede">Ток совершает работу, нагревая проводники (закон Джоуля-Ленца). Мощность показывает, как быстро совершается работа.</p>
+<p>Ток, идущий по сопротивлению, греет его. Это закон Джоуля-Ленца: работа A = I²·R·t, а в общем виде A = U·I·t. Мощность — работа в секунду: P = U·I = I²·R = U²/R.</p>
+<p>Какую запись выбрать, зависит от того, что одинаково. Последовательно ток общий, удобно P = I²·R: на большем сопротивлении выделяется большая мощность. Параллельно напряжение общее, удобно P = U²/R: на меньшем сопротивлении мощность больше.</p>
+<p>Чайник на 2000 Вт кипятит воду быстрее чайника на 1000 Вт при том же напряжении сети: каждую секунду в воду уходит вдвое больше джоулей.</p>
+<p>Как решать. Выпиши величины с рисунка к примеру «10 В и 2 А». Условие: На участке напряжение 10 В и ток 2 А. Какая мощность? Дальше подставляй их в формулу этой темы и сверяй шаги с решением под картинкой — оно закрыто, пока не попробуешь сам. Второй рисунок, «Последовательно два резистора», тот же приём на других данных: Два резистора включены последовательно, ток один. На каком выделяется большая мощность? Если оба примера сходятся, тему можно нести на контрольную.</p>
+  </article>
+  <article class="sheet" id="formulas">
+    <h2>Как читать формулу</h2>
+    <p class="formula">A = U · I · t = I² · R · t</p><p class="formula">P = U · I = I² · R = U² / R</p>
+    <div class="notes"><p>A = U·I·t = I²·R·t. P = U·I = I²·R = U²/R.</p></div>
+  </article>
+  <article class="sheet" id="analogy">
+    <h2>Чтобы осталось в голове</h2>
+    <div class="voice"><p>Чайник. Чем выше мощность (например, 2000 Вт), тем быстрее закипит вода.</p>
+<p>Чайник: чем выше мощность, например 2000 Вт, тем быстрее закипает вода.</p></div>
+  </article>
+  <article class="sheet traps" id="traps">
+    <h2>Где обычно спотыкаются</h2>
+    <p>Формулу P = U²/R удобно использовать для параллельного соединения (напряжение одинаково), а P = I² R — для последовательного (ток одинаков).</p>
+<p>Не хватай одну формулу на все соединения. P = U²/R — когда одинаково U, P = I²R — когда одинаков I.</p>
+  </article>
+  <section id="razbor">
+    <p class="tutor">Дальше две задачи. Сначала схема. Когда сам набросаешь ход, открой тетрадь — там дано, перевод в СИ, шаги и ответ в рамке.</p>
+    
+<article class="task" id="task-1">
+  <p class="kicker">Разбор 1</p>
+  <h2>10 В и 2 А</h2>
+  <p class="ask">На участке напряжение 10 В и ток 2 А. Какая мощность?</p>
+  <figure class="show"><img src="../../data/images/card_elec_current_power_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие. Ответа там нет — его ещё надо получить.</figcaption></figure>
+  <button type="button" data-open="nb-1">Я прикинул ход — открыть тетрадь</button>
+  <div class="notebook sheet" id="nb-1" hidden>
+    <p class="voice">Смотри на порядок, не на красивое число: сначала единицы, потом формула, потом ответ.</p>
+    <p><b>Дано.</b> На участке напряжение 10 В и ток 2 А</p>
+    <p><b>В СИ.</b></p>
+    <ul class="steps"></ul>
+    <p><b>Найти.</b> Какая мощность?</p>
+    <p><b>Решение.</b></p>
+    <ol class="steps"><li>P = U·I = 10·2 = 20 Вт.</li></ol>
+    <p class="answer">20 Вт.</p>
+    <img src="../../data/images/card_elec_current_power_0_sol.png" alt="Страница тетради с решением">
+  </div>
+</article>
+
+<article class="task" id="task-2">
+  <p class="kicker">Разбор 2</p>
+  <h2>Последовательно два резистора</h2>
+  <p class="ask">Два резистора включены последовательно, ток один. На каком выделяется большая мощность?</p>
+  <figure class="show"><img src="../../data/images/card_elec_current_power_1.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие. Ответа там нет — его ещё надо получить.</figcaption></figure>
+  <button type="button" data-open="nb-2">Я прикинул ход — открыть тетрадь</button>
+  <div class="notebook sheet" id="nb-2" hidden>
+    <p class="voice">Смотри на порядок, не на красивое число: сначала единицы, потом формула, потом ответ.</p>
+    <p><b>Дано.</b> Два резистора включены последовательно, ток один</p>
+    <p><b>В СИ.</b></p>
+    <ul class="steps"></ul>
+    <p><b>Найти.</b> На каком выделяется большая мощность?</p>
+    <p><b>Решение.</b></p>
+    <ol class="steps"><li>На том, у которого больше R: при общем токе P = I²·R.</li></ol>
+    <p class="answer">I²·R.</p>
+    <img src="../../data/images/card_elec_current_power_1_sol.png" alt="Страница тетради с решением">
+  </div>
+</article>
+
+  </section>
+  <nav class="exits">
+    <a class="btn" href="../tests/t/card_elec_current_power.html">Решить на сайте</a>
+    <a class="btn ghost" href="../work/card_elec_current_power.html">Лист в тетрадь</a>
+  </nav>
+  <nav class="pager"><a href="card_elec_current_ohm_full.html">← Закон Ома для полной цепи</a><a href="card_elec_magnetism_field.html">Магнитное поле тока →</a></nav>
+</main>
+<div class="watermark" aria-hidden="true">A = U · I · t = I² · R · t</div>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="../quiz.js"></script>
+</body>
+</html>

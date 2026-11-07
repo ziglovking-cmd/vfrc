@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12110e">
+<title>Последовательное и параллельное соединение</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body class="theme-electricity" data-theme-color="#12110e">
+<div class="atmosphere" aria-hidden="true"><span class="streak"></span></div>
+
+<header class="top wrap"><a href="../s/electricity.html">Электрика</a><a href="../index.html">Журнал</a></header>
+<main class="wrap">
+  <p class="kicker">2.4 · Постоянный электрический ток</p>
+  <h1>Последовательное и параллельное соединение</h1>
+  <p class="tutor">Найди, кто гонит заряд, и что ему мешает. Дальше — аккуратная арифметика, а не заклинание из букв. Ниже — как устроена тема «Последовательное и параллельное соединение», где обычно спотыкаются, и два разбора до ответа.</p>
+  <figure class="show"><img src="../../data/images/card_elec_current_circuits_0.png" alt="Схема условия, без ответа"><figcaption>Показ к теме. Это условие, не шпаргалка.</figcaption></figure>
+  <nav class="exits">
+    <a class="btn" href="../tests/t/card_elec_current_circuits.html">Решить на сайте</a>
+    <a class="btn ghost" href="../work/card_elec_current_circuits.html">Лист в тетрадь</a>
+  </nav>
+  <article class="sheet" id="theory">
+    <h2>Сначала смысл</h2>
+    <p class="lede">Это два способа включения потребителей в цепь. Важно запомнить, что сохраняется.</p>
+<p>Последовательно: ток один на всех, I = I₁ = I₂, напряжения складываются, U = U₁ + U₂, сопротивления тоже, R = R₁ + R₂. Так устроены вагончики поезда и новогодняя гирлянда, в которой перегорела одна лампа — разомкнулась вся цепь.</p>
+<p>Параллельно: напряжение одно, U = U₁ = U₂, токи складываются, I = I₁ + I₂, а складываются уже обратные сопротивления: 1/R = 1/R₁ + 1/R₂. Две одинаковые «трубы» по 10 Ом дают 1/R = 1/10 + 1/10, R = 5 Ом. Общее сопротивление параллельного участка всегда меньше наименьшего из участников.</p>
+<p>Путать эти наборы — главная ошибка расчёта. Сначала ответь: что общее, ток или напряжение.</p>
+<p>Как решать. Выпиши величины с рисунка к примеру «Два по 10 Ом параллельно». Условие: Два резистора по 10 Ом соединили параллельно. Чему равно общее сопротивление? Дальше подставляй их в формулу этой темы и сверяй шаги с решением под картинкой — оно закрыто, пока не попробуешь сам. Второй рисунок, «Два по 10 Ом последовательно», тот же приём на других данных: Те же два резистора по 10 Ом включили последовательно. Чему равно общее сопротивление? Если оба примера сходятся, тему можно нести на контрольную.</p>
+  </article>
+  <article class="sheet" id="formulas">
+    <h2>Как читать формулу</h2>
+    <p class="formula">Последовательно: I = I₁ = I₂, U = U₁ + U₂, R = R₁ + R₂</p><p class="formula">Параллельно: U = U₁ = U₂, I = I₁ + I₂, 1/R = 1/R₁ + 1/R₂</p>
+    <div class="notes"><p>Последовательно: I общий, U и R складываются. Параллельно: U общее, I складываются, 1/R = 1/R₁ + 1/R₂.</p></div>
+  </article>
+  <article class="sheet" id="analogy">
+    <h2>Чтобы осталось в голове</h2>
+    <div class="voice"><p>Последовательно — вагончики поезда. Ток один на всех, напряжение делится.<br>Параллельно — две трубы рядом. Напряжение (давление) одинаковое, ток (вода) суммируется.</p>
+<p>Последовательно — вагончики: ток один, напряжение делится. Параллельно — две трубы: давление одно, потоки складываются.</p></div>
+  </article>
+  <article class="sheet traps" id="traps">
+    <h2>Где обычно спотыкаются</h2>
+    <p>При параллельном соединении общее сопротивление всегда меньше самого маленького из сопротивлений! Например, R₁ = 10 Ом, R₂ = 10 Ом → R_общ = 5 Ом.</p>
+<p>При параллельном соединении общее R меньше самого маленького из сопротивлений. Два по 10 Ом — это 5 Ом, а не 20.</p>
+  </article>
+  <section id="razbor">
+    <p class="tutor">Дальше две задачи. Сначала схема. Когда сам набросаешь ход, открой тетрадь — там дано, перевод в СИ, шаги и ответ в рамке.</p>
+    
+<article class="task" id="task-1">
+  <p class="kicker">Разбор 1</p>
+  <h2>Два по 10 Ом параллельно</h2>
+  <p class="ask">Два резистора по 10 Ом соединили параллельно. Чему равно общее сопротивление?</p>
+  <figure class="show"><img src="../../data/images/card_elec_current_circuits_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие. Ответа там нет — его ещё надо получить.</figcaption></figure>
+  <button type="button" data-open="nb-1">Я прикинул ход — открыть тетрадь</button>
+  <div class="notebook sheet" id="nb-1" hidden>
+    <p class="voice">Смотри на порядок, не на красивое число: сначала единицы, потом формула, потом ответ.</p>
+    <p><b>Дано.</b> Два резистора по 10 Ом соединили параллельно</p>
+    <p><b>В СИ.</b></p>
+    <ul class="steps"></ul>
+    <p><b>Найти.</b> Чему равно общее сопротивление?</p>
+    <p><b>Решение.</b></p>
+    <ol class="steps"><li>1/R = 1/10 + 1/10 = 1/5, R = 5 Ом.</li></ol>
+    <p class="answer">Это меньше каждого.</p>
+    <img src="../../data/images/card_elec_current_circuits_0_sol.png" alt="Страница тетради с решением">
+  </div>
+</article>
+
+<article class="task" id="task-2">
+  <p class="kicker">Разбор 2</p>
+  <h2>Два по 10 Ом последовательно</h2>
+  <p class="ask">Те же два резистора по 10 Ом включили последовательно. Чему равно общее сопротивление?</p>
+  <figure class="show"><img src="../../data/images/card_elec_current_circuits_1.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие. Ответа там нет — его ещё надо получить.</figcaption></figure>
+  <button type="button" data-open="nb-2">Я прикинул ход — открыть тетрадь</button>
+  <div class="notebook sheet" id="nb-2" hidden>
+    <p class="voice">Смотри на порядок, не на красивое число: сначала единицы, потом формула, потом ответ.</p>
+    <p><b>Дано.</b> Те же два резистора по 10 Ом включили последовательно</p>
+    <p><b>В СИ.</b></p>
+    <ul class="steps"></ul>
+    <p><b>Найти.</b> Чему равно общее сопротивление?</p>
+    <p><b>Решение.</b></p>
+    <ol class="steps"><li>R = 10 + 10 = 20 Ом.</li></ol>
+    <p class="answer">Ток через оба один и тот же.</p>
+    <img src="../../data/images/card_elec_current_circuits_1_sol.png" alt="Страница тетради с решением">
+  </div>
+</article>
+
+  </section>
+  <nav class="exits">
+    <a class="btn" href="../tests/t/card_elec_current_circuits.html">Решить на сайте</a>
+    <a class="btn ghost" href="../work/card_elec_current_circuits.html">Лист в тетрадь</a>
+  </nav>
+  <nav class="pager"><a href="card_elec_current_resistance.html">← Сопротивление проводника</a><a href="card_elec_current_ohm_full.html">Закон Ома для полной цепи →</a></nav>
+</main>
+<div class="watermark" aria-hidden="true">Последовательно: I = I₁ = I₂, U = U₁ + U₂, R = R₁ + R₂</div>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="../quiz.js"></script>
+</body>
+</html>
