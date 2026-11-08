@@ -43,143 +43,133 @@
     <p>В знаменателе сумма R + r, а не одно только R. ЭДС ℰ — не то же самое, что напряжение на лампе.</p>
   </article>
   <section id="razbor">
-    <p class="tutor">Разобранные примеры. Решение каждого открывается отдельно.</p>
-    
+    <p class="tutor">Схему к задаче нарисуйте сами. Решение открывается отдельно.</p>
+
 <article class="task" id="task-1">
   <p class="kicker">Разбор 1</p>
-  <h2>ЭДС 12 В</h2>
-  <p class="ask">ЭДС источника 12 В, внутреннее сопротивление 1 Ом, нагрузка 5 Ом. Какой ток в цепи?</p>
-  <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Батарея 9 В</h2>
+  <p class="ask">ЭДС источника 9 В, внутреннее сопротивление 1 Ом, нагрузка 2 Ом. Найдите ток.</p>
   <button type="button" data-open="nb-1">Открыть решение</button>
   <div class="notebook sheet" id="nb-1" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> ЭДС источника 12 В, внутреннее сопротивление 1 Ом, нагрузка 5 Ом</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"></ul>
-    <p><b>Найти.</b> Какой ток в цепи?</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> ε = 9 В, r = 1 Ом, R = 2 Ом</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> I</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>I = ℰ/(R+r) = 12/(5+1) = 2 А.</li></ol>
-    <p class="answer">2 А.</p>
-    <img src="../../data/images/card_elec_current_ohm_full_0_sol.png" alt="Страница тетради с решением">
+    <ol class="steps"><li>I = 9 / (2 + 1) = 3 А.</li></ol>
+    <p class="answer">3 А.</p>
+    <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
+
 
 <article class="task" id="task-2">
   <p class="kicker">Разбор 2</p>
-  <h2>Напряжение на лампе</h2>
-  <p class="ask">В предыдущей цепи найди напряжение на нагрузке 5 Ом.</p>
-  <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_1.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>На лампе</h2>
+  <p class="ask">В цепи из предыдущей задачи ток 3 А, нагрузка 2 Ом. Найдите напряжение на нагрузке и падение на r.</p>
   <button type="button" data-open="nb-2">Открыть решение</button>
   <div class="notebook sheet" id="nb-2" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> В предыдущей цепи найди напряжение на нагрузке 5 Ом.</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"></ul>
-    <p><b>Найти.</b> ответ на вопрос условия</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> I = 3 А, R = 2 Ом, r = 1 Ом</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> U и U_r</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>U = I·R = 2·5 = 10 В.</li></ol>
-    <p class="answer">2·1.</p>
-    <img src="../../data/images/card_elec_current_ohm_full_1_sol.png" alt="Страница тетради с решением">
+    <ol class="steps"><li>U = I R = 6 В.</li><li>На внутреннем сопротивлении I r = 3 В.</li><li>6 + 3 = 9 В, вся ЭДС.</li></ol>
+    <p class="answer">6 В на нагрузке и 3 В внутри.</p>
+    <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
-    <!-- practice-more:start -->
 
 <article class="task" id="task-3">
   <p class="kicker">Разбор 3</p>
-  <h2>ЭДС 9 В</h2>
-  <p class="ask">ЭДС 9 В, внутреннее сопротивление 1 Ом, нагрузка 2 Ом. Найдите ток.</p>
-  <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Короткое замыкание</h2>
+  <p class="ask">Внешнее сопротивление стало нулём, ε = 6 В, r = 0,5 Ом. Какой ток?</p>
   <button type="button" data-open="nb-3">Открыть решение</button>
   <div class="notebook sheet" id="nb-3" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> ε = 9 В, r = 1 Ом, R = 2 Ом</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>I = ε / (R + r).</li></ul>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> R = 0, ε = 6 В, r = 0,5 Ом</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
     <p><b>Найти.</b> I</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>I = 9 / 3 = 3 А.</li></ol>
-    <p class="answer">3 А.</p>
+    <ol class="steps"><li>I = ε / r = 6 / 0,5 = 12 А.</li></ol>
+    <p class="answer">12 А.</p>
+    <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-4">
   <p class="kicker">Разбор 4</p>
-  <h2>Напряжение на нагрузке</h2>
-  <p class="ask">В предыдущих данных найдите напряжение на нагрузке 2 Ом при токе 3 А.</p>
-  <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Буква r</h2>
+  <p class="ask">Что обозначает r в формуле I = ε / (R + r)?</p>
   <button type="button" data-open="nb-4">Открыть решение</button>
   <div class="notebook sheet" id="nb-4" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> I = 3 А, R = 2 Ом</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>U = I R.</li></ul>
-    <p><b>Найти.</b> U</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> полная цепь</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> r</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>U = 3·2 = 6 В. На внутреннем сопротивлении остаётся 3 В.</li></ol>
-    <p class="answer">6 В.</p>
+    <ol class="steps"><li>Это внутреннее сопротивление источника.</li></ol>
+    <p class="answer">Внутреннее сопротивление.</p>
+    <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-5">
   <p class="kicker">Разбор 5</p>
-  <h2>Короткое замыкание</h2>
-  <p class="ask">Внешнее сопротивление стало нулём. Чем ограничен ток?</p>
-  <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Не вся ЭДС на лампе</h2>
+  <p class="ask">Почему при заметном токе напряжение на лампе меньше ЭДС?</p>
   <button type="button" data-open="nb-5">Открыть решение</button>
   <div class="notebook sheet" id="nb-5" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> R = 0</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>I = ε / r.</li></ul>
-    <p><b>Найти.</b> Ограничение</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> r не равно нулю, ток есть</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> причина</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>Ток ограничен внутренним сопротивлением.</li></ol>
-    <p class="answer">Внутренним сопротивлением r.</p>
+    <ol class="steps"><li>Часть напряжения падает на внутреннем сопротивлении: U = ε − I r.</li></ol>
+    <p class="answer">Часть ЭДС сидит на r.</p>
+    <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-6">
   <p class="kicker">Разбор 6</p>
-  <h2>Буква r</h2>
-  <p class="ask">Что обозначает r в законе Ома для полной цепи?</p>
-  <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Подобрать R</h2>
+  <p class="ask">ε = 12 В, r = 2 Ом. Какой ток пойдёт через нагрузку 4 Ом?</p>
   <button type="button" data-open="nb-6">Открыть решение</button>
   <div class="notebook sheet" id="nb-6" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> Источник</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>Не радиус провода.</li></ul>
-    <p><b>Найти.</b> r</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> ε = 12 В, r = 2 Ом, R = 4 Ом</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> I</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>r — внутреннее сопротивление источника.</li></ol>
-    <p class="answer">Внутреннее сопротивление источника.</p>
+    <ol class="steps"><li>I = 12 / 6 = 2 А.</li></ol>
+    <p class="answer">2 А.</p>
+    <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-7">
   <p class="kicker">Разбор 7</p>
-  <h2>Не вся ЭДС</h2>
-  <p class="ask">Почему напряжение на лампе при заметном токе меньше ЭДС?</p>
-  <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Холостой ход</h2>
+  <p class="ask">Источник разомкнут, тока нет. Чему равно напряжение на его клеммах?</p>
   <button type="button" data-open="nb-7">Открыть решение</button>
   <div class="notebook sheet" id="nb-7" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> Есть внутреннее сопротивление и ток</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>Часть напряжения падает на r.</li></ul>
-    <p><b>Найти.</b> Причина</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> I = 0</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> U</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>U = ε − I r.</li></ol>
-    <p class="answer">Часть ЭДС падает на внутреннем сопротивлении.</p>
+    <ol class="steps"><li>U = ε − I r = ε.</li><li>На клеммах вся ЭДС.</li></ol>
+    <p class="answer">Равно ЭДС.</p>
+    <figure class="show"><img src="../../data/images/card_elec_current_ohm_full_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
-<!-- practice-more:end -->
   </section>
   <nav class="exits">
     <a class="btn" href="../tests/t/card_elec_current_ohm_full.html">Решить на сайте</a>
