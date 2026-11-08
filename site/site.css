@@ -186,6 +186,27 @@ body.theme-electricity {
   animation: pulse 3.5s ease-in-out infinite;
 }
 
+body.theme-atom {
+  --accent: #b7e3c0;
+  --accent-ink: #1d4630;
+  --bg: #122018;
+}
+.theme-atom .atmosphere {
+  background:
+    radial-gradient(640px 320px at 80% -10%, rgba(120, 196, 140, 0.32), transparent 60%),
+    radial-gradient(420px 240px at 0% 100%, rgba(80, 140, 110, 0.22), transparent 55%),
+    #122018;
+}
+.theme-atom .orb {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  right: 8%;
+  top: 90px;
+  background: radial-gradient(circle, rgba(220, 245, 210, 0.85), rgba(80, 160, 110, 0.05) 68%);
+  box-shadow: 0 0 0 18px rgba(183, 227, 192, 0.08), 0 0 0 36px rgba(183, 227, 192, 0.05);
+}
+
 body.theme-optics {
   --accent: #d7c8ff;
   --accent-ink: #3a2a72;
@@ -283,6 +304,8 @@ body.theme-desk { --bg: #6d4b32; color: var(--ink); }
 .chapter-panel.thermo { background: linear-gradient(165deg, #ffd8c8, #f8efe4 60%); }
 .chapter-panel.electricity { background: linear-gradient(165deg, #fff1c9, #f7f1e6 58%); }
 .chapter-panel.optics { background: linear-gradient(165deg, #ece4ff, #f7f1e6 58%); }
+.chapter-panel.atom { background: linear-gradient(165deg, #d9f0df, #f7f1e6 58%); }
+.choices button.picked { outline: 2px solid var(--accent); }
 .chapter-panel .count { font-family: var(--sans); font-size: 13px; color: var(--muted); }
 
 .show {

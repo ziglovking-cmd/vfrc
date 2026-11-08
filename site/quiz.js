@@ -30,13 +30,68 @@
     document.querySelector(hash).scrollIntoView();
   }
 
+  deliverTelegramFile();
+
   const node = document.getElementById("quiz-data");
   if (!node) return;
   const data = JSON.parse(node.textContent);
   const stage = document.getElementById("stage");
   if (!stage) return;
+  if (sealedMode()) {
+    const tutor = document.querySelector("main .tutor");
+    if (tutor) {
+      tutor.textContent = "Файл с вопросами не содержит ответов. В конце будет показано, сколько ответов верных и сколько неверных.";
+    }
+  }
   showStart(data, stage);
 })();
+
+function telegramApp() {
+  const tg = window.Telegram && window.Telegram.WebApp;
+  if (!tg) return null;
+  const inside = (tg.initData && String(tg.initData).length > 0) || (tg.platform && tg.platform !== "unknown");
+  return inside ? tg : null;
+}
+
+function sealedMode() {
+  if (telegramApp()) return true;
+  return /(?:^|[?&])seal=1(?:&|$)/.test(location.search || "");
+}
+
+function exportSpec() {
+  const path = location.pathname || "";
+  const file = (path.split("/").pop() || "").replace(/\.html$/, "");
+  if (!file) return null;
+  if (/\/t\/[^/]+\.html$/.test(path)) {
+    return { rel: "../export/lessons/" + file + ".txt", name: file + ".txt" };
+  }
+  if (/\/tests\/t\/[^/]+\.html$/.test(path) || /\/tests\/b\/[^/]+\.html$/.test(path) || /\/tests\/s\/[^/]+\.html$/.test(path)) {
+    return { rel: "../../export/tests/" + file + ".txt", name: file + ".txt" };
+  }
+  if (/\/tests\/exam\.html$/.test(path)) {
+    return { rel: "../export/tests/exam.txt", name: "exam.txt" };
+  }
+  return null;
+}
+
+function deliverTelegramFile() {
+  const tg = telegramApp();
+  const spec = exportSpec();
+  if (!tg || !spec || typeof tg.downloadFile !== "function") return;
+  const key = "vfrc-file:" + spec.name;
+  try {
+    if (sessionStorage.getItem(key)) return;
+    sessionStorage.setItem(key, "1");
+  } catch (error) {
+    /* private mode can block storage; still try once */
+  }
+  const url = new URL(spec.rel, location.href).href;
+  try {
+    tg.downloadFile({ url: url, file_name: spec.name });
+  } catch (error) {
+    /* older clients keep the ordinary link on the page */
+  }
+}
 
 function openNotebook(id) {
   const el = document.getElementById(id);
@@ -61,62 +116,66 @@ function shuffle(list) {
 function rank(correct, total) {
   const percent = total ? Math.round((100 * correct) / total) : 0;
   if (total && correct === total) {
-    return ["Безупречно", "Все ответы верные. Можно спокойно открывать следующую тему."];
+    return ["Результат", "Все ответы верные."];
   }
-  if (percent >= 80) return ["Уверенно", "Основа уже держится. Загляни в темы, где ошибся."];
-  if (percent >= 60) return ["Хороший заход", "Больше половины с собой. Слабое место лучше перечитать, а не заучить букву."];
-  if (percent >= 40) return ["Есть зацепка", "Картина уже не пустая. Вернись в разбор и пройди ещё раз."];
-  return ["Разминка", "Так и начинают. Открой тему и разбери один промах вслух."];
+  if (percent >= 80) return ["Результат", "Верных ответов больше 80%. Имеет смысл вернуться к вопросам, где была ошибка."];
+  if (percent >= 60) return ["Результат", "Верных ответов больше половины. Материал тем, где были ошибки, стоит повторить."];
+  if (percent >= 40) return ["Результат", "Верных ответов меньше двух третей. Перед повторной попыткой разберите тему."];
+  return ["Результат", "Верных ответов мало. Сначала разберите тему, затем пройдите проверку снова."];
+}
+
+var MAX_ON_SITE = 15;
+
+function bankCount(data) {
+  return (data.pools || []).reduce(function (sum, group) { return sum + group.length; }, 0);
+}
+
+function plannedCount(data) {
+  var pools = data.pools || [];
+  var total = bankCount(data);
+  var planned;
+  if (data.perPool) planned = data.perPool * pools.length;
+  else planned = Math.min(data.size || total, total);
+  if (planned > MAX_ON_SITE) planned = MAX_ON_SITE;
+  if (planned > total) planned = total;
+  return planned;
 }
 
 function showStart(data, stage) {
-  const pool = data.pools || [];
-  const flat = pool.reduce(function (all, group) { return all.concat(group); }, []);
-  const shortSize = data.perPool
-    ? data.perPool * pool.length
-    : Math.min(data.size || flat.length, flat.length);
+  var count = plannedCount(data);
   stage.innerHTML = "";
-  const card = document.createElement("div");
+  var card = document.createElement("div");
   card.className = "q-card";
-  const lead = document.createElement("p");
-  lead.textContent = "В банке " + flat.length + " вопросов. Короткий заход — " + shortSize + ".";
+  var lead = document.createElement("p");
+  lead.textContent = "В проверке " + count + " вопросов.";
   card.appendChild(lead);
-  const short = document.createElement("button");
-  short.type = "button";
-  short.textContent = flat.length === shortSize ? "Начать" : "Короткий заход";
-  short.addEventListener("click", function () { start(data, stage, false); });
-  card.appendChild(short);
-  if (flat.length > shortSize) {
-    const full = document.createElement("button");
-    full.type = "button";
-    full.className = "ghost";
-    full.style.marginLeft = "8px";
-    full.textContent = "Весь банк";
-    full.addEventListener("click", function () { start(data, stage, true); });
-    card.appendChild(full);
-  }
+  var startButton = document.createElement("button");
+  startButton.type = "button";
+  startButton.textContent = "Начать";
+  startButton.addEventListener("click", function () { start(data, stage); });
+  card.appendChild(startButton);
   stage.appendChild(card);
 }
 
-function pick(data, full) {
-  if (full) {
-    const all = (data.pools || []).reduce(function (list, group) { return list.concat(group); }, []);
-    return shuffle(all);
-  }
+function pick(data) {
+  var limit = plannedCount(data);
+  var picked;
   if (data.perPool) {
-    let picked = [];
+    picked = [];
     (data.pools || []).forEach(function (group) {
       picked = picked.concat(shuffle(group).slice(0, data.perPool));
     });
-    return shuffle(picked);
+    picked = shuffle(picked);
+  } else {
+    var only = (data.pools && data.pools[0]) || [];
+    var size = data.size || only.length;
+    picked = shuffle(only).slice(0, size);
   }
-  const only = (data.pools && data.pools[0]) || [];
-  const size = data.size || only.length;
-  return shuffle(only).slice(0, size);
+  return picked.slice(0, limit);
 }
 
-function start(data, stage, full) {
-  const items = pick(data, full).map(function (question) {
+function start(data, stage) {
+  const items = pick(data).map(function (question) {
     const order = shuffle(question.options.map(function (_, index) { return index; }));
     return { question: question, order: order };
   });
@@ -168,15 +227,17 @@ function choose(data, stage, state, displayIndex, choices) {
   const ok = picked === question.correct;
   if (ok) state.correct += 1;
   else state.missed.push(question);
+  const sealed = sealedMode();
   Array.from(choices.children).forEach(function (button, index) {
     button.disabled = true;
+    if (sealed) {
+      if (index === displayIndex) button.classList.add("picked");
+      return;
+    }
     const original = item.order[index];
     if (original === question.correct) button.classList.add("good");
     else if (index === displayIndex) button.classList.add("bad");
   });
-  const why = document.createElement("p");
-  why.className = "explain";
-  why.textContent = (ok ? "Да. " : "Не то. ") + (question.why || "");
   const next = document.createElement("button");
   next.type = "button";
   next.textContent = state.index + 1 === state.items.length ? "К итогу" : "Дальше";
@@ -185,30 +246,66 @@ function choose(data, stage, state, displayIndex, choices) {
     state.index += 1;
     renderQuestion(data, stage, state);
   });
-  choices.parentElement.append(why, next);
+  if (!sealed) {
+    const why = document.createElement("p");
+    why.className = "explain";
+    why.textContent = (ok ? "Верно. " : "Неверно. ") + (question.why || "");
+    choices.parentElement.append(why, next);
+    return;
+  }
+  choices.parentElement.append(next);
 }
 
 function renderResult(stage, state) {
   const total = state.items.length;
-  const pair = rank(state.correct, total);
+  const wrong = total - state.correct;
+  const sealed = sealedMode();
   stage.innerHTML = "";
   const card = document.createElement("div");
   card.className = "q-card";
   const title = document.createElement("h2");
-  title.textContent = pair[0];
   const score = document.createElement("p");
-  score.textContent = state.correct + " из " + total + ". " + pair[1];
-  card.append(title, score);
-  state.missed.forEach(function (question) {
-    const row = document.createElement("p");
-    row.className = "miss";
-    row.textContent = question.topic + ": " + question.prompt;
-    card.appendChild(row);
-  });
+  if (sealed) {
+    title.textContent = "Итог";
+    score.textContent = "Правильно: " + state.correct + ". Неправильно: " + wrong + ".";
+    card.append(title, score);
+  } else {
+    const pair = rank(state.correct, total);
+    title.textContent = pair[0];
+    score.textContent = state.correct + " из " + total + ". " + pair[1];
+    card.append(title, score);
+    state.missed.forEach(function (question) {
+      const row = document.createElement("p");
+      row.className = "miss";
+      row.textContent = question.topic + ": " + question.prompt;
+      card.appendChild(row);
+    });
+  }
   const again = document.createElement("button");
   again.type = "button";
-  again.textContent = "Ещё раз";
+  again.textContent = "Пройти ещё раз";
   again.addEventListener("click", function () { showStart(JSON.parse(document.getElementById("quiz-data").textContent), stage); });
   card.appendChild(again);
+  const tg = telegramApp();
+  if (tg && typeof tg.sendData === "function") {
+    const report = document.createElement("button");
+    report.type = "button";
+    report.className = "ghost";
+    report.style.marginLeft = "8px";
+    report.textContent = "Передать боту только счёт";
+    report.addEventListener("click", function () {
+      try {
+        tg.sendData(JSON.stringify({
+          result: "score",
+          correct: state.correct,
+          wrong: wrong,
+          total: total
+        }));
+      } catch (error) {
+        /* sendData exists only for a WebApp opened from the bot keyboard */
+      }
+    });
+    card.appendChild(report);
+  }
   stage.appendChild(card);
 }
