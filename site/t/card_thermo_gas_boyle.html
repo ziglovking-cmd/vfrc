@@ -42,143 +42,133 @@
     <p>Закон Бойля-Мариотта не работает, если вместе с объёмом изменилась температура или газ вытек. Порция и T должны быть постоянны.</p>
   </article>
   <section id="razbor">
-    <p class="tutor">Разобранные примеры. Решение каждого открывается отдельно.</p>
-    
+    <p class="tutor">Схему к задаче нарисуйте сами. Решение открывается отдельно.</p>
+
 <article class="task" id="task-1">
   <p class="kicker">Разбор 1</p>
-  <h2>Сжатие в 3 раза</h2>
-  <p class="ask">Газ сжали в 3 раза при постоянной температуре. Как изменилось давление?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Насос</h2>
+  <p class="ask">Воздух в цилиндре сжали при постоянной температуре так, что объём стал в 5 раз меньше. Как изменилось давление?</p>
   <button type="button" data-open="nb-1">Открыть решение</button>
   <div class="notebook sheet" id="nb-1" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> Газ сжали в 3 раза при постоянной температуре</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"></ul>
-    <p><b>Найти.</b> Как изменилось давление?</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> T = const, V₂ = V₁ / 5</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> p</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>Объём и давление обратно пропорциональны.</li></ol>
-    <p class="answer">Объём стал в 3 раза меньше — давление выросло в 3 раза.</p>
-    <img src="../../data/images/card_thermo_gas_boyle_0_sol.png" alt="Страница тетради с решением">
+    <ol class="steps"><li>p V = const, давление выросло в 5 раз.</li></ol>
+    <p class="answer">Выросло в 5 раз.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
+
 
 <article class="task" id="task-2">
   <p class="kicker">Разбор 2</p>
-  <h2>Объём вырос в 2 раза</h2>
-  <p class="ask">При постоянной температуре объём газа увеличили в 2 раза. Что стало с давлением?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_1.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Давление вчетверо</h2>
+  <p class="ask">Изотермически давление подняли со 100 кПа до 400 кПа. Во сколько раз уменьшился объём?</p>
   <button type="button" data-open="nb-2">Открыть решение</button>
   <div class="notebook sheet" id="nb-2" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> При постоянной температуре объём газа увеличили в 2 раза</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"></ul>
-    <p><b>Найти.</b> Что стало с давлением?</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> p₁ = 100 кПа, p₂ = 400 кПа, T = const</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> V₁/V₂</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>p₂ = p₁·V₁/V₂ = p₁/2.</li></ol>
-    <p class="answer">Давление уменьшилось в 2 раза.</p>
-    <img src="../../data/images/card_thermo_gas_boyle_1_sol.png" alt="Страница тетради с решением">
+    <ol class="steps"><li>100 V₁ = 400 V₂, V₁/V₂ = 4.</li></ol>
+    <p class="answer">В 4 раза.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
-  <!-- practice-more:start -->
 
 <article class="task" id="task-3">
   <p class="kicker">Разбор 3</p>
-  <h2>Объём в 5 раз</h2>
-  <p class="ask">При постоянной температуре объём газа увеличили в 5 раз. Как изменилось давление?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Быстрый поршень</h2>
+  <p class="ask">Поршень вдвинули резко, газ заметно нагрелся. Можно ли сразу пользоваться p V = const?</p>
   <button type="button" data-open="nb-3">Открыть решение</button>
   <div class="notebook sheet" id="nb-3" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> T = const, V₂ = 5 V₁</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>p V = const.</li></ul>
-    <p><b>Найти.</b> p</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> температура выросла</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> применимость</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>Давление уменьшилось в 5 раз.</li></ol>
-    <p class="answer">Уменьшилось в 5 раз.</p>
+    <ol class="steps"><li>Закон Бойля требует постоянной температуры.</li><li>Здесь процесс не изотермический.</li></ol>
+    <p class="answer">Нет.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-4">
   <p class="kicker">Разбор 4</p>
-  <h2>Сжатие</h2>
-  <p class="ask">Газ изотермически сжали так, что давление выросло с 100 кПа до 400 кПа. Во сколько раз уменьшился объём?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Стравили</h2>
+  <p class="ask">При T = const давление упало со 150 кПа до 50 кПа. Как изменился объём?</p>
   <button type="button" data-open="nb-4">Открыть решение</button>
   <div class="notebook sheet" id="nb-4" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> p₁ = 100 кПа, p₂ = 400 кПа, T = const</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>p₁ V₁ = p₂ V₂.</li></ul>
-    <p><b>Найти.</b> V₁/V₂</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> p₁ = 150 кПа, p₂ = 50 кПа</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> V</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>100 V₁ = 400 V₂, V₁/V₂ = 4.</li></ol>
-    <p class="answer">В 4 раза.</p>
+    <ol class="steps"><li>Объём вырос в 3 раза.</li></ol>
+    <p class="answer">Вырос в 3 раза.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-5">
   <p class="kicker">Разбор 5</p>
-  <h2>Нагрев при сжатии</h2>
-  <p class="ask">Поршень вдвинули быстро, газ заметно нагрелся. Можно ли сразу писать p V = const?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Имя</h2>
+  <p class="ask">Как называется процесс при постоянной температуре?</p>
   <button type="button" data-open="nb-5">Открыть решение</button>
   <div class="notebook sheet" id="nb-5" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> T изменилась</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>Закон Бойля требует постоянной температуры.</li></ul>
-    <p><b>Найти.</b> Вывод</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> T = const</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> название</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>Процесс не изотермический, формула Бойля не применяется без оговорки.</li></ol>
-    <p class="answer">Нет.</p>
+    <ol class="steps"><li>Это изотерма.</li></ol>
+    <p class="answer">Изотермический.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-6">
   <p class="kicker">Разбор 6</p>
-  <h2>Давление 2 атм</h2>
-  <p class="ask">При T = const давление уменьшили со 150 кПа до 50 кПа. Как изменился объём?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Литры</h2>
+  <p class="ask">Газ занимал 4 л при 150 кПа. Изотермически объём стал 6 л. Найдите новое давление.</p>
   <button type="button" data-open="nb-6">Открыть решение</button>
   <div class="notebook sheet" id="nb-6" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> p₁ = 150 кПа, p₂ = 50 кПа</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>p V = const.</li></ul>
-    <p><b>Найти.</b> V</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> V₁ = 4 л, p₁ = 150 кПа, V₂ = 6 л, T = const</p>
+    <p><b>В СИ.</b></p><ul class="steps"><li>Отношение объёмов можно оставить в литрах: множитель перевода сократится, температуры равны.</li></ul>
+    <p><b>Найти.</b> p₂</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>Объём вырос в 3 раза.</li></ol>
-    <p class="answer">Вырос в 3 раза.</p>
+    <ol class="steps"><li>150 · 4 = p₂ · 6, p₂ = 100 кПа.</li></ol>
+    <p class="answer">100 кПа.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-7">
   <p class="kicker">Разбор 7</p>
-  <h2>Имя процесса</h2>
-  <p class="ask">Как называется процесс при постоянной температуре?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>График</h2>
+  <p class="ask">На диаграмме p(V) изотерма — гипербола. Что происходит с давлением, когда объём растёт?</p>
   <button type="button" data-open="nb-7">Открыть решение</button>
   <div class="notebook sheet" id="nb-7" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
     <p><b>Дано.</b> T = const</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>Школьное название.</li></ul>
-    <p><b>Найти.</b> Название</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> ход p</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>Это изотермический процесс.</li></ol>
-    <p class="answer">Изотермический.</p>
+    <ol class="steps"><li>Произведение p V постоянно, поэтому p убывает.</li></ol>
+    <p class="answer">Давление падает.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_boyle_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
-<!-- practice-more:end -->
   </section>
   <nav class="exits">
     <a class="btn" href="../tests/t/card_thermo_gas_boyle.html">Решить на сайте</a>

@@ -43,143 +43,133 @@
 <p>Температура только в кельвинах. Нагрев от 0°C до 100°C — это не удвоение объёма, а множитель около 1,37.</p>
   </article>
   <section id="razbor">
-    <p class="tutor">Разобранные примеры. Решение каждого открывается отдельно.</p>
-    
+    <p class="tutor">Схему к задаче нарисуйте сами. Решение открывается отдельно.</p>
+
 <article class="task" id="task-1">
   <p class="kicker">Разбор 1</p>
-  <h2>От 0°C до 100°C</h2>
-  <p class="ask">Газ нагрели от 0°C до 100°C при постоянном давлении. Во сколько раз вырос объём?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>От 300 до 450</h2>
+  <p class="ask">Газ нагрели от 300 К до 450 К при постоянном давлении. Во сколько раз вырос объём?</p>
   <button type="button" data-open="nb-1">Открыть решение</button>
   <div class="notebook sheet" id="nb-1" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> Газ нагрели от 0°C до 100°C при постоянном давлении</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"></ul>
-    <p><b>Найти.</b> Во сколько раз вырос объём?</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> T₁ = 300 К, T₂ = 450 К, p = const</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> V₂/V₁</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>T₁ = 273 К, T₂ = 373 К.</li><li>V₂/V₁ = 373/273 ≈ 1,37.</li></ol>
-    <p class="answer">Не в два раза.</p>
-    <img src="../../data/images/card_thermo_gas_gaylussac_0_sol.png" alt="Страница тетради с решением">
+    <ol class="steps"><li>450 / 300 = 1,5.</li></ol>
+    <p class="answer">В 1,5 раза.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
+
 
 <article class="task" id="task-2">
   <p class="kicker">Разбор 2</p>
-  <h2>От 300 К до 600 К</h2>
-  <p class="ask">При постоянном давлении абсолютную температуру идеального газа увеличили от 300 К до 600 К. Как изменился объём?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_1.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Двадцать и сорок</h2>
+  <p class="ask">Воздух нагрели от 20 °C до 40 °C при постоянном давлении. Верно ли, что объём удвоился?</p>
   <button type="button" data-open="nb-2">Открыть решение</button>
   <div class="notebook sheet" id="nb-2" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> При постоянном давлении абсолютную температуру идеального газа увеличили от 300 К до 600 К</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"></ul>
-    <p><b>Найти.</b> Как изменился объём?</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> t₁ = 20 °C, t₂ = 40 °C, p = const</p>
+    <p><b>В СИ.</b></p><ul class="steps"><li>20 °C = 293 К, 40 °C = 313 К.</li></ul>
+    <p><b>Найти.</b> проверка</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>V/T = const, температура выросла в 2 раза, значит и объём вырос в 2 раза.</li></ol>
-    <p class="answer">const, температура выросла в 2 раза, значит и объём вырос в 2 раза.</p>
-    <img src="../../data/images/card_thermo_gas_gaylussac_1_sol.png" alt="Страница тетради с решением">
+    <ol class="steps"><li>T₁ = 293 К, T₂ = 313 К.</li><li>313 / 293 ≈ 1,07, не 2.</li></ol>
+    <p class="answer">Нет.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
-  <!-- practice-more:start -->
 
 <article class="task" id="task-3">
   <p class="kicker">Разбор 3</p>
-  <h2>300 и 450 К</h2>
-  <p class="ask">При постоянном давлении газ нагрели от 300 К до 450 К. Во сколько раз вырос объём?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Охладили втрое</h2>
+  <p class="ask">При p = const температуру понизили от 600 К до 200 К. Как изменился объём?</p>
   <button type="button" data-open="nb-3">Открыть решение</button>
   <div class="notebook sheet" id="nb-3" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> T₁ = 300 К, T₂ = 450 К, p = const</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>V/T = const.</li></ul>
-    <p><b>Найти.</b> V₂/V₁</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> T₁ = 600 К, T₂ = 200 К</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> V</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>450/300 = 1,5.</li></ol>
-    <p class="answer">В 1,5 раза.</p>
+    <ol class="steps"><li>Объём уменьшился в 3 раза.</li></ol>
+    <p class="answer">Уменьшился в 3 раза.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-4">
   <p class="kicker">Разбор 4</p>
-  <h2>Цельсий</h2>
-  <p class="ask">Газ нагрели от 20 °C до 40 °C при постоянном давлении. Можно ли сказать, что объём удвоился?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Имя процесса</h2>
+  <p class="ask">Как называется процесс при постоянном давлении?</p>
   <button type="button" data-open="nb-4">Открыть решение</button>
   <div class="notebook sheet" id="nb-4" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> t₁ = 20 °C, t₂ = 40 °C</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>T₁ = 293 К, T₂ = 313 К.</li></ul>
-    <p><b>Найти.</b> Вывод</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> p = const</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> название</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>Отношение 313/293 не равно 2.</li></ol>
-    <p class="answer">Нет.</p>
+    <ol class="steps"><li>Это изобара.</li></ol>
+    <p class="answer">Изобарный.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-5">
   <p class="kicker">Разбор 5</p>
-  <h2>Охлаждение</h2>
-  <p class="ask">При p = const абсолютную температуру уменьшили от 600 К до 200 К. Как изменился объём?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Запись</h2>
+  <p class="ask">Какое соотношение связывают V и T на изобаре?</p>
   <button type="button" data-open="nb-5">Открыть решение</button>
   <div class="notebook sheet" id="nb-5" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> T₁ = 600 К, T₂ = 200 К</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>V пропорционален T.</li></ul>
-    <p><b>Найти.</b> V</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> p = const, идеальный газ</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> формула</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>Объём уменьшился в 3 раза.</li></ol>
-    <p class="answer">Уменьшился в 3 раза.</p>
+    <ol class="steps"><li>V₁ / T₁ = V₂ / T₂, температуры в кельвинах.</li></ol>
+    <p class="answer">V/T = const.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-6">
   <p class="kicker">Разбор 6</p>
-  <h2>Имя</h2>
-  <p class="ask">Как называется процесс при постоянном давлении?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Шарик</h2>
+  <p class="ask">Воздушный шарик с мороза 0 °C внесли в комнату 27 °C. Давление внутри успевает сравняться с наружным. Во сколько раз вырос объём?</p>
   <button type="button" data-open="nb-6">Открыть решение</button>
   <div class="notebook sheet" id="nb-6" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> p = const</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>Школьное название.</li></ul>
-    <p><b>Найти.</b> Название</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> t₁ = 0 °C, t₂ = 27 °C, p = const</p>
+    <p><b>В СИ.</b></p><ul class="steps"><li>0 °C = 273 К, 27 °C = 300 К.</li></ul>
+    <p><b>Найти.</b> V₂/V₁</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>Это изобарный процесс.</li></ol>
-    <p class="answer">Изобарный.</p>
+    <ol class="steps"><li>273 и 300 К.</li><li>300 / 273 ≈ 1,10.</li></ol>
+    <p class="answer">Примерно в 1,10 раза.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-7">
   <p class="kicker">Разбор 7</p>
-  <h2>Формула</h2>
-  <p class="ask">Какую запись используют для изобарного процесса идеального газа?</p>
-  <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>График</h2>
+  <p class="ask">На графике V(T) изобара — прямая, идущая в начало абсолютной шкалы. Что отложено по оси температуры?</p>
   <button type="button" data-open="nb-7">Открыть решение</button>
   <div class="notebook sheet" id="nb-7" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> p = const</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>Нужны абсолютные температуры.</li></ul>
-    <p><b>Найти.</b> Формула</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> изобарный процесс</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> ось</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>V₁/T₁ = V₂/T₂.</li></ol>
-    <p class="answer">V/T = const.</p>
+    <ol class="steps"><li>Абсолютную температуру, кельвины, не градусы Цельсия.</li></ol>
+    <p class="answer">Кельвины.</p>
+    <figure class="show"><img src="../../data/images/card_thermo_gas_gaylussac_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
-<!-- practice-more:end -->
   </section>
   <nav class="exits">
     <a class="btn" href="../tests/t/card_thermo_gas_gaylussac.html">Решить на сайте</a>

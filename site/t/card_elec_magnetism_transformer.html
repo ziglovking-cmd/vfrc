@@ -43,143 +43,133 @@
     <p>Трансформатор не повышает постоянное напряжение батареи. Нужен переменный поток. И U₂/U₁ — это N₂/N₁, не наоборот.</p>
   </article>
   <section id="razbor">
-    <p class="tutor">Разобранные примеры. Решение каждого открывается отдельно.</p>
-    
+    <p class="tutor">Схему к задаче нарисуйте сами. Решение открывается отдельно.</p>
+
 <article class="task" id="task-1">
   <p class="kicker">Разбор 1</p>
-  <h2>220 В → 2200 В</h2>
-  <p class="ask">Трансформатор повышает напряжение с 220 В до 2200 В. Во сколько раз число витков вторичной обмотки больше, чем первичной?</p>
-  <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Четыре к одному</h2>
+  <p class="ask">Вторичных витков в 4 раза больше, чем первичных. На первичную обмотку подали 30 В переменного напряжения. Что на вторичной?</p>
   <button type="button" data-open="nb-1">Открыть решение</button>
   <div class="notebook sheet" id="nb-1" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> Трансформатор повышает напряжение с 220 В до 2200 В</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"></ul>
-    <p><b>Найти.</b> Во сколько раз число витков вторичной обмотки больше, чем первичной?</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> N₂ / N₁ = 4, U₁ = 30 В</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> U₂</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>U₂/U₁ = 2200/220 = 10.</li></ol>
-    <p class="answer">10·N₁.</p>
-    <img src="../../data/images/card_elec_magnetism_transformer_0_sol.png" alt="Страница тетради с решением">
+    <ol class="steps"><li>U₂ = 4 · 30 = 120 В.</li></ol>
+    <p class="answer">120 В.</p>
+    <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
+
 
 <article class="task" id="task-2">
   <p class="kicker">Разбор 2</p>
-  <h2>Понижающий в 2 раза</h2>
-  <p class="ask">У первичной обмотки вдвое больше витков, чем у вторичной. На первичную подали 220 В переменного напряжения. Что на вторичной?</p>
-  <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_1.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Понижающий</h2>
+  <p class="ask">Вторичных витков меньше, чем первичных. Трансформатор повышающий или понижающий?</p>
   <button type="button" data-open="nb-2">Открыть решение</button>
   <div class="notebook sheet" id="nb-2" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> У первичной обмотки вдвое больше витков, чем у вторичной. На первичную подали 220 В переменного напряжения</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"></ul>
-    <p><b>Найти.</b> Что на вторичной?</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> N₂ &lt; N₁</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> тип</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>N₂/N₁ = 1/2, поэтому U₂ = 110 В.</li></ol>
-    <p class="answer">Это понижающий трансформатор.</p>
-    <img src="../../data/images/card_elec_magnetism_transformer_1_sol.png" alt="Страница тетради с решением">
+    <ol class="steps"><li>Напряжение относится как число витков.</li><li>На вторичной стороне напряжение ниже.</li></ol>
+    <p class="answer">Понижающий.</p>
+    <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
-  <!-- practice-more:start -->
 
 <article class="task" id="task-3">
   <p class="kicker">Разбор 3</p>
-  <h2>В четыре раза</h2>
-  <p class="ask">Отношение чисел витков N₂/N₁ = 4. На первичную обмотку подали 30 В переменного напряжения. Найдите напряжение на вторичной.</p>
-  <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Батарейка</h2>
+  <p class="ask">Почему трансформатор не передаёт напряжение от батарейки постоянного тока?</p>
   <button type="button" data-open="nb-3">Открыть решение</button>
   <div class="notebook sheet" id="nb-3" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> N₂/N₁ = 4, U₁ = 30 В</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>U₂/U₁ = N₂/N₁.</li></ul>
-    <p><b>Найти.</b> U₂</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> ток первичной обмотки постоянен</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> причина</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>U₂ = 4·30 = 120 В.</li></ol>
-    <p class="answer">120 В.</p>
+    <ol class="steps"><li>Поток в сердечнике не меняется.</li><li>Во вторичной обмотке нет ЭДС индукции.</li></ol>
+    <p class="answer">Нет изменения потока.</p>
+    <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-4">
   <p class="kicker">Разбор 4</p>
-  <h2>Понижающий</h2>
-  <p class="ask">Вторичных витков меньше, чем первичных. Какой это трансформатор по напряжению?</p>
-  <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Формула</h2>
+  <p class="ask">Как связаны напряжения и числа витков идеального трансформатора?</p>
   <button type="button" data-open="nb-4">Открыть решение</button>
   <div class="notebook sheet" id="nb-4" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> N₂ &lt; N₁</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>U относится как N.</li></ul>
-    <p><b>Найти.</b> Тип</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> общий меняющийся поток</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> формула</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>Напряжение во вторичной цепи ниже. Трансформатор понижающий.</li></ol>
-    <p class="answer">Понижающий.</p>
+    <ol class="steps"><li>U₁ / U₂ = N₁ / N₂.</li></ol>
+    <p class="answer">U₁ / U₂ = N₁ / N₂.</p>
+    <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-5">
   <p class="kicker">Разбор 5</p>
-  <h2>Постоянный ток</h2>
-  <p class="ask">Почему трансформатор не передаёт напряжение от батареи постоянного тока?</p>
-  <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Повышающий</h2>
+  <p class="ask">Где больше витков, если трансформатор повышающий?</p>
   <button type="button" data-open="nb-5">Открыть решение</button>
   <div class="notebook sheet" id="nb-5" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> Поток не меняется</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>Нужна индукция.</li></ul>
-    <p><b>Найти.</b> Причина</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> U₂ &gt; U₁</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> обмотка</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>При постоянном токе магнитный поток не меняется, ЭДС во вторичной обмотке не возникает.</li></ol>
-    <p class="answer">Поток не меняется, ЭДС не наводится.</p>
+    <ol class="steps"><li>Во вторичной обмотке витков больше.</li></ol>
+    <p class="answer">Во вторичной.</p>
+    <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-6">
   <p class="kicker">Разбор 6</p>
-  <h2>Формула</h2>
-  <p class="ask">Как связаны напряжения и числа витков идеального трансформатора?</p>
-  <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>220 на 22</h2>
+  <p class="ask">Первичная обмотка на 220 В имеет 1000 витков. Сколько витков во вторичной, если нужно 22 В?</p>
   <button type="button" data-open="nb-6">Открыть решение</button>
   <div class="notebook sheet" id="nb-6" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> Две обмотки на одном сердечнике</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>U₁/U₂ = N₁/N₂.</li></ul>
-    <p><b>Найти.</b> Формула</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> U₁ = 220 В, N₁ = 1000, U₂ = 22 В</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> N₂</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>U₁/U₂ = N₁/N₂.</li></ol>
-    <p class="answer">U₁/U₂ = N₁/N₂.</p>
+    <ol class="steps"><li>N₂ / N₁ = U₂ / U₁ = 22 / 220 = 0,1.</li><li>N₂ = 100.</li></ol>
+    <p class="answer">100 витков.</p>
+    <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
 
 <article class="task" id="task-7">
   <p class="kicker">Разбор 7</p>
-  <h2>Повышающий</h2>
-  <p class="ask">Где больше витков у повышающего трансформатора?</p>
-  <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема условия, без ответа"><figcaption>На схеме только условие.</figcaption></figure>
+  <h2>Сердечник</h2>
+  <p class="ask">Зачем обмотки сажают на железный сердечник?</p>
   <button type="button" data-open="nb-7">Открыть решение</button>
   <div class="notebook sheet" id="nb-7" hidden>
-    <p class="voice">Порядок записи: данные, единицы СИ, искомая величина, ход решения, ответ.</p>
-    <p><b>Дано.</b> U₂ &gt; U₁</p>
-    <p><b>В СИ.</b></p>
-    <ul class="steps"><li>Больше витков — больше напряжение.</li></ul>
-    <p><b>Найти.</b> Обмотка</p>
+    <p class="voice">Сначала данные, затем перевод в СИ, если он нужен, потом ход и ответ.</p>
+    <p><b>Дано.</b> нужен общий поток</p>
+    <p><b>В СИ.</b> Перевод не нужен: все величины уже заданы в СИ.</p>
+    <p><b>Найти.</b> роль сердечника</p>
     <p><b>Решение.</b></p>
-    <ol class="steps"><li>Во вторичной обмотке.</li></ol>
-    <p class="answer">Во вторичной обмотке.</p>
+    <ol class="steps"><li>Сердечник проводит меняющийся магнитный поток через обе обмотки.</li></ol>
+    <p class="answer">Чтобы обе обмотки пронизывал один поток.</p>
+    <figure class="show"><img src="../../data/images/card_elec_magnetism_transformer_0.png" alt="Схема к решению"><figcaption>Схема для сверки. Её рисуют до того, как открывают решение.</figcaption></figure>
   </div>
 </article>
 
-<!-- practice-more:end -->
   </section>
   <nav class="exits">
     <a class="btn" href="../tests/t/card_elec_magnetism_transformer.html">Решить на сайте</a>

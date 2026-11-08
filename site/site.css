@@ -439,6 +439,13 @@ body.theme-desk { --bg: #6d4b32; color: var(--ink); }
 .lines { min-height: 96px; }
 .lines.tall { min-height: 220px; }
 .lines.short { min-height: 64px; }
+.lines.scheme {
+  min-height: 180px;
+  margin-top: 6px;
+  border: 1px dashed rgba(28, 25, 21, 0.45);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.35);
+}
 .answer-line { min-height: 64px; border: 2px solid var(--ink); border-radius: 12px; margin-top: 6px; background: rgba(255, 255, 255, 0.45); }
 .stamp {
   display: inline-block;
